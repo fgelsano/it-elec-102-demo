@@ -1,0 +1,9 @@
+#blog-img{
+    height: 60vh;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.blog-title{
+    text-align: center;
+}
