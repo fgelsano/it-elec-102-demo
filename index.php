@@ -5,9 +5,6 @@
     $sql = "SELECT * FROM blogs";
     $result = $conn->query($sql);
 
-    
-    
-
 ?>
 
 <!DOCTYPE html>
@@ -42,7 +39,7 @@
                 <?php while($row = $result->fetch_assoc()) { ?>
                     <div class="col-12 col-sm-6 col-md-3 mt-4">
                         <div class="card">
-                            <img src="assets/img/1.svg" class="card-img-top" alt="...">
+                            <img src="assets/uploads/<?php echo $row['blog_img'] ?>" class="card-img-top" alt="...">
                             <div class="card-body">
                                 <h5 class="card-title"><?php echo $row['title'] ?></h5>
                                 <p class="card-text"><?php echo substr($row['description'], 0, 100) . ' ...' ?></p>
